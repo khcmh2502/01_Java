@@ -43,6 +43,49 @@ public class AbstractionService {
 		System.out.println("p1의 age : " + p1.age);
 		
 		*/
+		// 전달하는 값(인자) : 전달인자
+		p1.setName("홍길동");
+		p1.setGender('남');
+		p1.setpNo("123456-1234567");
+		p1.setAddress("서울시 중구 남대문로 120");
+		p1.setPhone("010-1234-1234");
+		p1.setAge(20);
+		
+		System.out.println( p1.getName() );
+		System.out.println( p1.getGender() );
+		System.out.println( p1.getpNo() );
+		System.out.println( p1.getAddress() );
+		System.out.println( p1.getPhone() );
+		System.out.println( p1.getAge() );
+		
+		
+		// 본인 객체
+		// People 클래스 이용하여 본인 이름 객체 생성하기
+		// 본인의 정보 setter 값 대입
+		// getter 이용해서 콘솔창 출력까지
+		
+		System.out.println("=========================");
+		People mihyun = new People();
+		
+		//mihyun.age = -100;
+		
+		mihyun.setName("조미현");
+		mihyun.setGender('여');
+		mihyun.setpNo("123456-2234567");
+		mihyun.setPhone("010-2453-1593");
+		mihyun.setAddress("서울시 중구 어쩌구..");
+		mihyun.setAge(20);
+		
+		System.out.println( mihyun.getName() );
+		System.out.println( mihyun.getGender() );
+		System.out.println( mihyun.getpNo() );
+		System.out.println( mihyun.getPhone() );
+		System.out.println( mihyun.getAddress() );
+		System.out.println( mihyun.getAge() );
+		
+		
+		
+		
 		
 		
 		
