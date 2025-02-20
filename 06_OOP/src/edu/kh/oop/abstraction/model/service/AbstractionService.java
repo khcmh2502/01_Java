@@ -41,8 +41,8 @@ public class AbstractionService {
 		System.out.println("p1의 address : " + p1.address);
 		System.out.println("p1의 phone : " + p1.phone);
 		System.out.println("p1의 age : " + p1.age);
-		
 		*/
+		
 		// 전달하는 값(인자) : 전달인자
 		p1.setName("홍길동");
 		p1.setGender('남');
