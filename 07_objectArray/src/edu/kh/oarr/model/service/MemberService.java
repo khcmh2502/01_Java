@@ -267,7 +267,6 @@ public class MemberService {
  		// 2) 로그인이 되어있는 경우
  		// 		현재 로그인한 회원의 정보를 출력할 문자열을 만들어서 반환
  		//		이름, 아이디, 나이, 지역
- 		
  		String str = "이름 : " + loginMember.getMemberName();
  		str += "\n아이디 : " + loginMember.getMemberId();
  		str += "\n나이 : " + loginMember.getMemberAge();
