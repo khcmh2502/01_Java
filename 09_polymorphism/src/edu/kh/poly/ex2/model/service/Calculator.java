@@ -27,4 +27,16 @@ public interface Calculator {
 	public abstract int divide(int num1, int num2);
 	
 	
+	default void display() {
+		System.out.println("Calculator의 display()");
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
