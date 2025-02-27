@@ -1,5 +1,7 @@
 package edu.kh.exception.model.service;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -148,7 +150,40 @@ public class ExceptionService {
 		
 	}
 	
+	public void ex4() {
+		
+		try {
+			methodA();
+			
+		} catch (Exception e) {
+			System.out.println("methodC에서부터 발생한 예외를 ex4에서 잡아 처리함");
+		}
+		
+		
+	}
 	
+	public void methodA() throws Exception{
+		methodB();
+	}
+	
+	public void methodB() throws Exception{
+		methodC();
+	}
+	
+	public void methodC() throws IOException{
+		// throws : 호출한 메서드에게 예외를 던짐
+		// -> 호출한 메서드에게 예외처리를 하라고 위임하는 행위
+		
+		// throw : 예외 강제 발생 구문
+		throw new FileNotFoundException();
+	}
+	
+	
+	
+	public void ex5() throws UserException{
+		// 사용자 정의 예외 클래스인 UserException 사용하여 강제 예외 발생시키기
+		throw new UserException("짠!");
+	}
 	
 	
 	
