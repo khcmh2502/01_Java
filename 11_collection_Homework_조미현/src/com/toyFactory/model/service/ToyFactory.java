@@ -27,16 +27,16 @@ public class ToyFactory {
 	// 메서드
 	public ToyFactory() { // 기본생성자
 		// 기본 등록된 재료
-//		materialMap.put(1, "면직물");
-//		materialMap.put(2, "플라스틱");
-//		materialMap.put(3, "유리");
-//		materialMap.put(4, "고무");
+		materialMap.put(1, "면직물");
+		materialMap.put(2, "플라스틱");
+		materialMap.put(3, "유리");
+		materialMap.put(4, "고무");
 
 		// 현재 제작된 장난감
 
 		// 1. 일반 배열 사용
-		// toySet.add(new Toy("마미롱레그", 8, 36000, "분홍색", "19950805", addMaterials(new
-		// int[] {1,4})));
+		// toySet.add(new Toy("마미롱레그", 8, 36000, "분홍색", "19950805", 
+		//addMaterials(new int[] {1,4})));
 
 		// 2. List.of() 사용
 		// toySet.add(new Toy("마미롱레그", 8, 36000, "분홍색", "19950805",
@@ -62,7 +62,7 @@ public class ToyFactory {
 	 * 
 	 * @return
 	 */
-	public Set<String> addMaterials(Integer... materials /* List<Integer> materials */ /* int[] materials */) {
+	public Set<String> addMaterials(Integer... materials/* List<Integer> materials*/ /*int[] materials*/ ) {
 
 		// 매개변수로 전달받은 재료를 저장하여 반환할 Set객체를 생성
 		Set<String> addedMaterials = new HashSet<String>();
